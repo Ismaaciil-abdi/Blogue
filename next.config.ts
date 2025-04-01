@@ -4,10 +4,20 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "encrypted-tbn0.gstatic.com",
+        hostname: "*",
         protocol: "https",
         port: "",
       },
+      // {
+      //   hostname: "lh3.googleusercontent.com",
+      //   protocol: "https",
+      //   port: "",
+      // },
+      // {
+      //   hostname: "jamesclear.com",
+      //   protocol: "https",
+      //   port: "",
+      // },
     ],
   },
 };

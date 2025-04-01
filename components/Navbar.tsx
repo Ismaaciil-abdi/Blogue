@@ -6,6 +6,7 @@ import {
   LogoutLink,
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import Image from "next/image";
 
 export default async function Navbar() {
   const { getUser } = getKindeServerSession();
@@ -15,22 +16,27 @@ export default async function Navbar() {
     <nav className="flex items-center justify-between py-5">
       <div className="flex items-center gap-6">
         <Link href="/">
-          <h1 className="text-3xl font-bold">Blogue</h1>
+          <Image
+            src="/BlogueLogo.svg"
+            alt="BlogueLogo"
+            width={50}
+            height={50}
+          />
         </Link>
 
         {/* athor links */}
-        <div className="hidden sm:flex items-center gap-6">
+        <div className="flex items-center gap-6">
           <Link
-            className="text-sm font-medium hover:text-cyan-500 transition-color"
+            className="text-lg font-bold hover:text-gray-500 transition-color"
             href="/"
           >
             Home
           </Link>
           <Link
-            className="text-sm font-medium hover:text-cyan-500 transition-color"
+            className="text-lg font-bold hover:text-gray-500 transition-color"
             href="/dashboard"
           >
-            Dashboard
+            Articles
           </Link>
         </div>
       </div>

@@ -21,10 +21,10 @@ export default async function Dashbaord() {
   const data = await getData(user.id);
   return (
     <div>
-      <div className="flex items-center justify-between mb-4 mt-3">
+      <div className="flex items-center justify-between mb-7 mt-5">
         <h2 className="text-xl font-medium">Your Blog Articales</h2>
         <Link className={buttonVariants()} href="/dashboard/create">
-          Create Articale
+          Create
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

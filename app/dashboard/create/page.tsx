@@ -1,5 +1,5 @@
 import { handleSubmit } from "@/app/actions";
-import { Button } from "@/components/ui/button";
+import { SubmitButton } from "@/components/SubmitButton";
 import {
   Card,
   CardContent,
@@ -47,7 +47,7 @@ export default function Create() {
                 name="url"
               />
             </div>
-            <Button>Create Articale</Button>
+            <SubmitButton />
           </form>
         </CardContent>
       </Card>
