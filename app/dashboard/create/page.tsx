@@ -16,30 +16,30 @@ export default function Create() {
     <div className="mt-15">
       <Card className="max-w-lg mx-auto">
         <CardHeader>
-          <CardTitle className="font-semibold">Create Articale</CardTitle>
+          <CardTitle className="font-bold text-2xl">Create Articale</CardTitle>
           <CardDescription>
-            Share a new articales with your friends
+            Fill out the form below to create a new article.
           </CardDescription>
         </CardHeader>
 
         <CardContent>
           <form className="flex flex-col gap-4" action={handleSubmit}>
             <div className="flex flex-col gap-2">
-              <Label className="font-semibold">Title</Label>
+              <Label className="font-semibold text-[18px]">Title</Label>
               <Input name="title" required type="text" placeholder="Title" />
             </div>
 
             <div className="flex flex-col gap-2">
-              <Label className="font-semibold">Content</Label>
+              <Label className="font-semibold text-[18px]">Content</Label>
               <Textarea
                 name="content"
                 required
-                placeholder="Body of the articale"
+                placeholder=" Your article content.."
               />
             </div>
 
             <div className="flex flex-col gap-2">
-              <Label className="font-semibold">Image URL</Label>
+              <Label className="font-semibold text-[18px]">Image URL</Label>
               <Input
                 required
                 type="url"

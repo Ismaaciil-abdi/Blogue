@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import { prisma } from "./utils/db";
 import { BlogPostCard } from "@/components/BlogPostCard";
-import LoadingDashboard from "./dashboard/loading";
 import { Skeleton } from "@/components/ui/skeleton";
 
 async function getData() {
