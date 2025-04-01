@@ -3,7 +3,6 @@ import { prisma } from "../../utils/db";
 import { notFound } from "next/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
-import { Skeleton } from "@/components/ui/skeleton";
 
 async function getData(id: string) {
   const data = await prisma.blogPost.findUnique({
